@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+    </head>
+  <body>
+    <div>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey to find out your reading preferences.</p>
+    </div>
+    <div>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Basic Info</legend>
+        <label for="name" id="name-label">Name: <input required id="name" name="name" type="text" placeholder="Jane Doe" /></label>
+        <label for="email" id="email-label">Email: <input required id="email" name="email" type="email" placeholder="jane.doe@gmail.com"/></label>
+        <label for="number" id="number-label">Age (optional): <input id="number" name="number" type="number" min="18" max="120" placeholder="20"/></label>
+        </fieldset>
+        <fieldset>
+        <label for="dropdown">What is your favorite genre? <select id="dropdown" name="dropdown">
+          <option value="">Choose One</option>
+          <option value="1">Adventure</option>
+          <option value="2">Horror</option>
+          <option value="3">Sci Fi</option>
+          <option value="4">Romance</option>
+          <option value="5">Classic Literature</option>
+          <option value="6">Nonfiction</option>
+        </select></label>
+        </fieldset>
+        <fieldset>
+        <legend>How many books do you read per year?</legend>
+        <label for="none"><input id="none" type="radio" name="amount" class="inline" checked value="none"/> None</label>
+        <label for="few"><input id="few" type="radio" name="amount" class="inline" value="few"/> 1-5</label>
+        <label for="some"><input id="some" type="radio" name="amount" class="inline" value="some"/> 6-10</label>
+        <label for="average"><input id="average" type="radio" name="amount" class="inline" value="average"/> 11-15</label>
+        <label for="many"><input id="many" type="radio" name="amount" class="inline" value="many"/> 16-20</label>
+        <label for="lots"><input id="lots" type="radio" name="amount" class="inline" value="lots" /> 21+</label>
+        </fieldset>
+        <fieldset>
+          <legend>Have you read these books?</legend>
+          <p id="check">Check all that apply</p>
+     <label for="checkbox">
+        <input class="inline" id="checkbox" type="checkbox" required name="checkbox" value="checkbox" value="none"/> War & Peace
+      </label>
+      <label for="checkbox2">
+        <input class="inline" id="checkbox2" type="checkbox" required name="checkbox2" value="checkbox2"/> Anna Karenina
+      </label>
+      <label for="checkbox2">
+        <input class="inline" id="checkbox2" type="checkbox" required name="checkbox2" value="checkbox2"/>Pride & Prejudice
+      </label>
+      <label for="checkbox2">
+        <input class="inline" id="checkbox2" type="checkbox" required name="checkbox2" value="checkbox2"/> Little Women
+      </label>
+      </fieldset>
+      <fieldset>
+      <legend>Tell us more about your reading habits:</legend> <label for="bio">
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="My favorite way to read..."></textarea></fieldset>
+<input id="submit" name="submit" type="submit" value="Submit" /></label>
+        </form>
+      </div>
+    </body>  
+</html>
