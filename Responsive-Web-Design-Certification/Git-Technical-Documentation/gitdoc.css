@@ -1,0 +1,99 @@
+/*Page Wide Rules*/
+* {
+    background-color: #F0F0E8;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  header {
+    color: #F64D27;
+    font-family: garamond;
+  }
+  
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  #main-doc {
+    position: absolute;
+    padding: 10px;
+    margin-left: 200px;
+  }
+  
+  li {
+    line-height: 1.2;
+  }
+  
+  code {
+    background-color: gray;
+    color: white;
+    padding: 0 1px;
+    border: 1px solid black;
+  }
+  
+  a {
+    color: #F64D27;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /*Navigation Bar*/
+  
+  #navbar {
+    position: fixed;
+    min-width: 150px;
+    left: 0;
+    height: 100%;
+    top:0;
+    width: 200px;
+    border-right: double black;
+  }
+  
+  .nav-link {
+    color: black;
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    border-bottom: solid black 1px;
+    font-family: garamond;
+    font-weight: normal;
+  }
+  
+  #first-link {
+    border-top: solid black 1px;
+  }
+  
+  .nav-link:hover {
+    color: #F64D27;
+  }
+  
+  /*Main Content*/
+  
+  /*Other*/
+  
+  @media (max-width: 300px) {
+    p, li {
+      font-size: 10px;
+    }
+    
+    h2,h3 {
+      font-size: 16px;
+    }
+    #navbar {
+      visibility: hidden;
+    }
+    #main-doc {
+    margin-left: 0;
+  }
+  }

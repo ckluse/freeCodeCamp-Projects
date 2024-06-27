@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta> 
+    <title>The Wonderful World of Git</title>
+    <link rel="stylesheet" href="gitdoc.css">
+  </head> 
+  <body>
+    <nav id="navbar">
+      <header><h1>The Wonderful World of Git</h1></header>
+    <a href="#What_Is_Git?" class="nav-link" id="first-link">What is Git?</a>
+    <a href="#Getting_Started_With_Git" class="nav-link">Getting Started With Git</a>
+    <a href="#Connecting_Git_to_Github" class="nav-link">Connecting Git to Github</a>
+    <a href="#Common_Commands_in_Git" class="nav-link">Common Commands in Git</a>
+    <a href="#Still_need_help?" class="nav-link">Still need help?</a>
+    </nav>
+  <main id="main-doc"> 
+      <section class="main-section" id="What_Is_Git?">
+        <header><h2>What is Git?</h2></header>
+        <p>Git is a distributed version control system that allows you to track changes to files and collaborate with others on projects. It helps manage different versions of your code, revert to previous versions if needed, create branches to work on features separately, and merge changes back together. Git is widely used by developers to manage source code, but it can track changes to any set of files.</p>
+      </section>
+      <section class="main-section" id="Getting_Started_With_Git">
+      <header><h2>Getting Started With Git</h2></header>
+      <p>Git is fairly straightforward to install on your computer.</p>
+      <ol>
+        <li>Visit the official Git website (https://git-scm.com) and find the "Downloads" section.</li>
+        <li>Find your operating system ("Windows", "Mac", or "Linux") and click on the appropriate link.</li>
+        <li>Follow all the installation instructions.</li>
+        <li>To verify that everything was installed correctly, open up the terminal or command line and type <code>git version</code></li>
+      </ol>
+      </section>
+      <section class="main-section" id="Connecting_Git_to_Github">
+        <header><h2>Connecting Git to Github</h2></header>
+      <p>GitHub is a web-based platform that provides hosting for Git repositories and facilitates collaboration. If you're planning on collaborating with other devs or sharing your projects with the world, then you need to connect your local projects to a GitHub account. To connect your Git repositories to GitHub, follow these steps:</p>
+      <ol><li>Create a GitHub account if you don't already have one. Visit <a target="_blank" href="https://github.com/"> GitHub's website</a> and sign up.</li>
+
+<li>Create a new repository on GitHub. Click the "+" icon in the top-right corner and select <strong>"New repository"</strong>. Give your repository a name, choose the visibility (public or private), and click <strong>"Create repository"</strong>.</li>
+
+<li>Copy the URL of your GitHub repository. On the repository page, click the <strong>"Code"</strong> button and copy the HTTPS or SSH URL.</li>
+
+<li>Open a terminal or command prompt and navigate to your local Git repository.</li>
+
+<li>Add the GitHub repository as a remote by typing in the following:
+  <ul>
+   <li><code>git remote add origin &lt;repository-url&gt;</code></li>
+   <li><strong>Note:</strong> Replace <strong>&lt;repository-url&gt;</strong> with the URL you copied from GitHub.</li></li>
+   </ul>
+<li>Verify the remote was added successfully by typing:
+   <code> git remote -v </code>. You should see the URL of your GitHub repository listed.</li>
+<li>Once you are ready to push your local commits to GitHub, type the following:
+  <ul>
+   <li><code> git push -u origin main </code></li>
+   </ul>
+   This pushes your commits to the `main` branch on GitHub. If your default branch has a different name, replace `main` with the appropriate branch name.</li> </ol>
+
+<p>Now your local Git repository is connected to GitHub! You can push commits, collaborate with others, and take advantage of GitHub's features.</p>
+      </section>
+
+      <section class="main-section" id="Common_Commands_in_Git">
+      <header><h2>Common Commands in Git</h2></header>
+      <div class="commands">
+        <p>Now that you are all set up, it's time to use Git to manage your code and projects. Below are some of the most common commands you will use in Git for your version control.</p>
+        <ol>
+  <li><code>git init</code>: Initializes a new Git repository in the current directory.</li>
+
+<li><code>git clone &lt;url&gt;</code>: Creates a copy of a Git repository from the specified URL.</li>
+
+<li><code>git add &lt;file&gt;</code>: Adds changes in a file to the staging area to be committed. Use `[git add .]` to add all changes.</li>
+
+<li><code>git commit -m "message"</code>: Commits the staged changes with the specified message describing the changes.</li>
+
+<li><code>git status</code>: Shows the current status of the repository, including staged, unstaged, and untracked files.</li>
+
+<li><code>git branch</code>: Lists all the branches in the repository. Use `<code>git branch &lt;branch-name&lt;</code> to create a new branch.</li>
+
+<li><code>git checkout &lt;branch-name&gt;</code>: Switches to the specified branch. Use <code>git checkout -b &lt;branch-name&gt;</code> to create a new branch and switch to it.</li>
+
+<li><code>git merge &lt;branch-name&gt;</code>: Merges the specified branch into the current branch.</li>
+
+<li><code>git pull</code>: Fetches changes from the remote repository and merges them into the current branch.</li>
+
+<li><code>git push</code>: Pushes committed changes to the remote repository.</li>
+ </ol>
+      </div>
+      </section>
+      <section class="main-section" id="Still_need_help?">
+        <header><h2>Still need help?</h2></header>
+        <p>If you're still having problems or have questions about using Git, don't worry! There are plenty of resources available to help you:</p>
+<ol>
+<li><strong>Official Git Documentation:</strong> The official <a target="_blank" href="https://git-scm.com/doc">Git documentation</a> is a comprehensive resource that covers all aspects of Git. It includes a reference manual, a book on Git pro, and guides for various Git commands and concepts.</li>
+
+<li><strong>GitHub Guides:</strong> <a target="_blank" href="https://guides.github.com/">GitHub</a> provides a set of guides that cover various topics related to Git and GitHub. These guides are beginner-friendly and provide step-by-step instructions for common tasks.</li>
+
+<li><strong>Stack Overflow:</strong> <a target="_blank" href="https://stackoverflow.com/">Stack Overflow</a> is a popular Q&A platform where developers can ask questions and find answers. You can search for Git-related questions or post your own question to get help from the community.</li>
+
+<li><strong>Git Forums and Communities:</strong> There are several online forums and communities dedicated to Git where you can ask questions, share experiences, and learn from others. Some popular ones include:
+<ul>
+  <li><a target="_blank" href="https://book.git-scm.com/community">Git Community Book</a></li>
+  <li><a target="_blank" href="https://git.wiki.kernel.org/index.php/GitMailingList">Git User's Manual Mailing List</li>
+   <li><a target="_blank" href="https://stackoverflow.com/questions/tagged/git">Stack Overflow Git Tag</a> </li>
+   </li>
+</ol>
+<p>Remember, learning Git takes time and practice. Don't hesitate to experiment, make mistakes, and seek help when needed. With persistence and the right resources, you'll become proficient in using Git for version control and collaboration.</p>
+</section>
+  </main>
+  </body>
+</html>
